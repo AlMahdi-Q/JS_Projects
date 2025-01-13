@@ -1,9 +1,8 @@
 function r_arry(arr){
-    let r_arry = [];
     for (let i = 0; i < arr.length;i++){
-        r_arry.unshift(arr[i]);
+        arr.splice(i,0,arr.pop());
     }
-    return r_arry;
+    return arr;
 }
 let array = [];
 while(true){
